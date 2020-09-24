@@ -1,0 +1,14 @@
+{
+  "name": "node-ex-cmd-line-2",
+  "version": "1.0.0",
+  "author": "EddyPERREUL <e.perreul@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./": "./src/"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "prettier": "^2.1.2"
+  }
+}

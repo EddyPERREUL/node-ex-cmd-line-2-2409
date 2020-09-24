@@ -35,7 +35,7 @@ if (isNaN(age)) {
     process.exit(2)
 }
 // Verification of voting authorization
-if (age < 18) {
+if (age <= 18) {
     console.log(
         chalk.red(
             `Sorry, ${firstName} ${name}, you are a minor, so you can't vote`

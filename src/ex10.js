@@ -49,6 +49,7 @@ let country = readlineSync.question(
 console.log(country)
 console.log(typeof country)
 // Security Check (user's country)
+/*
 if (country != true) {
     console.log(chalk.red('Error : Please enter a value'))
     process.exit(1)
@@ -59,10 +60,11 @@ if (country != 'us' || country != 'fr') {
     )
     process.exit(1)
 }
+*/
 // Verification of voting authorization
 switch (country) {
     case 'us':
-        if (age < 21) {
+        if (age <= 21) {
             console.log(
                 chalk.red(
                     `Sorry, ${firstName} ${name}, you are a minor, so you can't vote`
@@ -78,7 +80,7 @@ switch (country) {
             break
         }
     case 'fr':
-        if (age < 18) {
+        if (age <= 18) {
             console.log(
                 chalk.red(
                     `Sorry, ${firstName} ${name}, you are a minor, so you can't vote`
